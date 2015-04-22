@@ -1,8 +1,8 @@
 {
-    "name": "Chrome Extension",
+    "name": "NumberCatcher",
     "version": "0.2.0",
     "manifest_version": 2,
-    "description": "__MSG_appDescription__",
+    "description": "Captures the phone number from the DOM",
     "icons": {
         "16": "images/icon-16.png",
         "128": "images/icon-128.png"
@@ -44,14 +44,14 @@
             "matches": [
                 "http://*/*",
                 "https://*/*"
-            ],
-            "exclude_matches": [
-            ],
-            "css": [
-            ],
-            "js": [
+              ],
+              "css": [
+                "bower_components/angular/angular-csp.css"
+              ],
+              "js": [
+                "bower_components/angular/angular.min.js",
                 "scripts/contentscript.js"
-            ],
+              ],
             "run_at": "document_end",
             "all_frames": false
         }
